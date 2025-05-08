@@ -23,7 +23,7 @@ A simple landing page created with only HTML and CSS, without frameworks or Java
 ## Project Structure 
 
 📦️1_LANDING_PAGE
-┣ 📂src
+┣ 📂assets
 ┃ ┗ 📂images
 ┃   ┗ 📂icons
 ┣ 📂styles
@@ -56,7 +56,7 @@ Right-click on index.html → "Open with Live Server"
 
 ## Usage 
 
-<img src="images/icons/list.png" width="40" height="40"> This project serves as a starting point for creating your own homepage. 
+This project serves as a starting point for creating your own homepage. 
 
 You can customize the text, images, and colors directly in the HTML and CSS to suit your purpose (product, course, service, etc.).
 
