@@ -1,0 +1,23 @@
+
+// _globals.scss
+@use 'variables';
+
+:root {
+  --soft-blue: #{$soft-blue};
+  --gray: #{$gray};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: $font-stack;
+
+  &.no-horizontal-scroll {
+    overflow-x: hidden;
+  }
+}

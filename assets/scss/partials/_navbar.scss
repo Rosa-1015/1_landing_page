@@ -1,0 +1,53 @@
+// _navbar.scss
+@use 'variables';
+
+.navbar {
+  padding: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+
+    #logo {
+      max-height: 30px;
+      width: 148px;
+    }
+
+    .navbar-links {
+      display: flex;
+      text-transform: uppercase;
+      color: $gray;
+      align-items: center;
+      margin-left: 5rem;
+
+      .navbar-link {
+        letter-spacing: 0.1em;
+        transition: color 0.2s;
+        color: $gray;
+        margin-left: 2.5rem;
+
+        &:hover {
+          color: $highlight-color;
+        }
+      }
+
+      .navbar-login {
+        padding: 0.5rem 2rem;
+        background-color: $highlight-color;
+        color: white;
+        border: 0.125rem solid $highlight-color;
+        border-radius: 0.5rem;
+        margin-left: 2.5rem;
+
+        &:hover {
+          background-color: transparent;
+          color: $highlight-color;
+        }
+      }
+    }
+  }
+}

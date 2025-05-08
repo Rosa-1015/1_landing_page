@@ -1,0 +1,48 @@
+
+.footer {
+  background-color: hsl(229, 31%, 21%);
+  padding: 4rem 0;
+
+  .footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      font-size: 1.125rem;
+      font-weight: 300;
+      color: hsl(229, 8%, 60%);
+
+      .footer-link {
+        text-transform: uppercase;
+        transition: color 0.3s;
+        color: grey;
+
+        &:hover {
+          color: hsl(0, 94%, 66%);
+        }
+      }
+
+      .footer-logo {
+        margin-bottom: 0.25rem;
+        max-height: 40px;
+      }
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 2.5rem;
+
+      .footer-icon {
+        height: 1.5rem;
+      }
+    }
+  }
+}

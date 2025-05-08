@@ -1,0 +1,94 @@
+// _hero.scss
+@use 'variables';
+
+.hero {
+  .central-container {
+    display: flex;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+  }
+
+  .column-1, .column-2 {
+    display: flex;
+    flex: 1;
+  }
+
+  .column-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0 0;
+  }
+
+  #title {
+    font-size: 3.75rem;
+  }
+
+  #text {
+    color: grey;
+    font-size: 1.5rem;
+    max-width: 448px;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 2.5rem;
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 2.5rem;
+  }
+
+  .button {
+    background-color: $blue;
+    border: 0.125rem solid;
+    border-radius: 0.25rem;
+    padding: 0.875rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .btnGoogle {
+    background-color: $blue;
+    color: white;
+    border-color: $blue;
+
+    &:hover {
+      background-color: white;
+      color: $blue;
+    }
+  }
+
+  .btnFirefox {
+    background-color: grey;
+    color: black;
+    border-color: grey;
+
+    &:hover {
+      background-color: white;
+      color: grey;
+    }
+  }
+
+  .superimposed-images {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .imagen-fondo {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 70%;
+    z-index: 1;
+  }
+
+  .imagen-frontal {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    display: block;
+  }
+}
