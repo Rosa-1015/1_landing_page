@@ -31,13 +31,16 @@ This is a responsive landing page built using HTML5 and SASS. It is designed wit
 
 ## Project Structure 
 
-📦️1_LANDING_PAGE
+📦️ 1_LANDING_PAGE
 ┣ 📂assets
-┃ ┗ 📂css
-┃ ┗ 📂images
-┃   ┗ 📂icons
+┃ ┣ 📂css
+┃ ┃ ┗ 📄 style.css
+┃ ┣ 📂images
+┃ ┃ ┗ 📂icons
 ┃ ┗ 📂scss
-┃   ┗ 📂partials
+┃   ┣ 📂partials
+┃   ┣ 📄 style.scss
+┃   ┗ 📄 style.css.map
 ┣ 📄 index.html
 ┗ 📄 README.md
 
