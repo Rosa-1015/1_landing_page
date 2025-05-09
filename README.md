@@ -1,6 +1,26 @@
 
 # Landing Page SASS Project
 
+## Table of Contents
+
+- [Description](#description)
+  
+- [Project Structure](#project-structure)
+  
+- [Installation](#installation)
+  
+- [Usage](#usage)
+  
+- [Technologies Used](#technologies-used)
+  
+- [Screenshots](#screenshots)
+
+## Description
+
+Sprint 1.1. HTML i CSS amb Flex
+
+A simple landing page created with only HTML and CSS, without frameworks or JavaScript. Ideal as a basic example for practicing static web design. It's part of a web development sprint designed to practice semantic structure, custom styles, and clean design.
+
 ## 📁 Estructura del proyecto
 
 ```
