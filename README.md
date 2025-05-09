@@ -8,9 +8,7 @@
 - [Project Structure](#project-structure)
   
 - [Installation](#installation)
-  
-- [Usage](#usage)
-  
+    
 - [Technologies Used](#technologies-used)
 
 ## Description
