@@ -29,18 +29,18 @@ This is a responsive landing page built using HTML5 and SASS. It is designed wit
 
 ## Project Structure 
 
-📦️ 1_LANDING_PAGE
-┣ 📂assets
-┃ ┣ 📂css
-┃ ┃ ┗ 📄 style.css
-┃ ┣ 📂images
-┃ ┃ ┗ 📂icons
-┃ ┗ 📂scss
-┃   ┣ 📂partials
-┃   ┣ 📄 style.scss
-┃   ┗ 📄 style.css.map
-┣ 📄 index.html
-┗ 📄 README.md
+1_LANDING_PAGE/
+├── index.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── images/
+    │   └── icons/
+    └── scss/
+        ├── partials/
+        ├── style.scss
+        └── style.css.map
 
 ## Installation
 
