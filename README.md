@@ -26,7 +26,7 @@ A simple landing page created with only HTML and CSS, without frameworks or Java
 ┣ 📂assets
 ┃ ┗ 📂images
 ┃   ┗ 📂icons
-┣ 📂styles
+┃ ┗ 📂styles
 ┣ 📄 index.html
 ┗ 📄 README.md
 
@@ -37,7 +37,7 @@ No dependency installation is required. To view the project:
 1. **Clone this repository:**
 
 ```bash
-git clone https://github.com/Rosa-1015/landing_page
+git clone https://github.com/Rosa-1015/1_landing_page
 ```
 
 2. **Navigate to the project folder:**
