@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1.2 Tailwind Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-white p-4 [font-family:'Rubik',sans-serif]">
+    <!--Navbar-->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="assets/images/logo-bookmark.svg" class="h-8" alt="Bookmark Logo" />
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-red-700 hover:bg-white hover:text-red-700 hover:border hover:border-red-700 focus:ring-4 focus:outline-none
+                      focus:ring-red-700 font-medium rounded-lg text-sm px-4 py-2 text-center dark:text-white dark:bg-red-600 dark:hover:bg-white 
+                      dark:hover:text-red-700 dark:hover:border dark:hover:border-red-700 dark:focus:ring-red-800">LOGIN</button>
+                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm 
+                  text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400
+                  dark:hover:bg-white dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:ml-auto md:mr-6"
+                id="navbar-cta">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
+                    md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#features"
+                            class="block py-2 px-3 md:p-0 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 
+                            dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="#download"
+                            class="block py-2 px-3 md:p-0 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 
+                            dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">DOWNLOAD</a>
+                    </li>
+                    <li>
+                        <a href="#faq"
+                            class="block py-2 px-3 md:p-0 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700  
+                            dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--FEATURES-->
+    <section id="faq" class="bg-white dark:bg-gray-900">
+        <div class="mx-auto max-w-screen-xl text-center">
+            <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 dark:text-white">
+                Frequently Asked Questions
+            </h1>
+            <p class="text-base text-center font-normal text-gray-500 dark:text-gray-400 max-w-md mx-auto px-4 pb-6">
+                Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email
+                us.
+            </p>
+        </div>
+
+        <!--ACCORDION-->
+        <div class="max-w-lg mx-auto">
+            <div id="accordion-flush" data-accordion="collapse"
+                data-active-classes="bg-white dark:bg-gray-900 text-red-600 dark:text-red-500"
+                data-inactive-classes="text-gray-500 dark:text-gray-400">
+                <h2 id="accordion-flush-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                        data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                        aria-controls="accordion-flush-body-2">
+                        <span>What is Bookmark?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+
+                <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Fugiat, repellat amet doloribus consequuntur eos similique
+                            provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae
+                            delectus id suscipit labore?</p>
+                    </div>
+                </div>
+                <h2 id="accordion-flush-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                        data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                        aria-controls="accordion-flush-body-2">
+                        <span>How can I request a new browser?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Fugiat, repellat amet doloribus consequuntur
+                            eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa
+                            mollitia
+                            recusandae delectus id suscipit labore?</p>
+                    </div>
+                </div>
+                <h2 id="accordion-flush-heading-3">
+                    <button type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                        data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                        aria-controls="accordion-flush-body-3">
+                        <span>Is ther a mobile app?</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Fugiat, repellat amet doloribus consequuntur
+                            eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa
+                            mollitia
+                            recusandae delectus id suscipit labore?</p>
+                    </div>
+                </div>
+                <h2 id="accordion-flush-heading-4">
+                    <button type="button"
+                        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                        data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
+                        aria-controls="accordion-flush-body-4">
+                        <span>What about other Chromium browsers</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                    <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Fugiat, repellat amet doloribus consequuntur eos similique
+                            provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae
+                            delectus id suscipit labore?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="bg-gray-900 text-white">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="assets/images/logo-bookmark.svg" class="h-8" alt="Bookmark Logo" />
+                </a>
+                <ul class="flex items-center space-x-6 text-lg font-medium text-gray-400 sm:mb-0 me-8">
+                    <li>
+                        <a href="#" class="md:hover:text-red-600 me-4 md:me-6 p-4">FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="#" class="md:hover:text-red-600 me-4 md:me-6">DOWNLOAD</a>
+                    </li>
+                    <li>
+                        <a href="#" class="md:hover:text-red-600 me-4 md:me-6">FAQ</a>
+                    </li>
+                </ul>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <div class="flex mt-4 sm:mt-0 space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                            <img src="assets/images/icon-facebook.svg" class="h-6 w-6" alt="Facebook icon" />
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                            <img src="assets/images/icon-twitter.svg" class="h-6 w-6" alt="Twitter icon" />
+                        </a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
