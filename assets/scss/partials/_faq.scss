@@ -1,3 +1,5 @@
+@use 'globals';
+@use 'variables';
 
 .faq {
   .container-faq {
@@ -43,17 +45,17 @@
           align-items: center;
           justify-content: space-between;
           padding: 0.75rem 0;
-          color: #6b7280;
+          color: gray;
           transition: color 0.5s ease;
         }
 
         &:focus .accordion-icon {
           transform: rotate(-180deg);
-          color: #ef4444;
+          color: $deep-red;
         }
 
         &:hover .accordion-title {
-          color: #ef4444;
+          color: $deep-red;
         }
 
         .accordion-title {
@@ -68,7 +70,7 @@
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.5s ease;
-          color: #9ca3af;
+          color: $gray;
           text-align: justify;
           padding: 0 0.5rem;
 

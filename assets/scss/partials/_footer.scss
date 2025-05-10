@@ -1,6 +1,8 @@
+@use 'globals';
+@use 'variables';
 
 .footer {
-  background-color: hsl(229, 31%, 21%);
+  background-color: $deep-blue;
   padding: 4rem 0;
 
   .footer-container {
@@ -18,7 +20,7 @@
       gap: 2rem;
       font-size: 1.125rem;
       font-weight: 300;
-      color: hsl(229, 8%, 60%);
+      color: gray;
 
       .footer-link {
         text-transform: uppercase;
@@ -26,7 +28,7 @@
         color: grey;
 
         &:hover {
-          color: hsl(0, 94%, 66%);
+          color: $highlight-color;
         }
       }
 

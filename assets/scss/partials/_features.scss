@@ -1,4 +1,4 @@
-// _navbar.scss
+@use 'globals';
 @use 'variables';
 
 .features {
@@ -45,12 +45,12 @@
       justify-content: center;
       text-align: center;
       cursor: pointer;
-      color: rgb(77, 76, 76);
+      color: gray;
       border-bottom: 1px solid #ccc;
       width: 100%;
 
       &:hover {
-        color: #f25f3a;
+        color: $highlight-color;
       }
 
       .tab-title {
@@ -119,18 +119,18 @@
             display: inline-block;
             padding: 0.75rem 1.5rem;
             font-weight: 600;
-            color: #fff;
-            background-color: #5368df;
-            border: 2px solid #fff;
+            color: white;
+            background-color: $soft-blue;
+            border: 2px solid white;
             border-radius: 0.5rem;
             text-decoration: none;
             height: 52px;
             width: 126px;
 
             &:hover {
-              background-color: #fff;
-              color: #5368df;
-              border: 0.125rem solid #5368df;
+              background-color: white;
+              color: $soft-blue;
+              border: 0.125rem solid $soft-blue;
             }
           }
         }
