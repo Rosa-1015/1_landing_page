@@ -1,6 +1,3 @@
-# 1_landing_page
-Basic landing page
-
 # Bookmark Landing Page
 
 This is a **responsive landing page** inspired by the [Tailwind From Scratch - Bookmark Project](https://tailwindfromscratch.com/website-projects/bookmark/index.html#features), built using **[Tailwind CSS](https://tailwindcss.com/)** via **CDN**, with no build tools or frameworks required.
