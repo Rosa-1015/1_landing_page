@@ -18,17 +18,17 @@
 
 <body class="bg-gray-100 p-0 font-[Rubik]">
     <!--<body class="bg-white p-0 [font-family:'Rubik',sans-serif]">-->
-    <!--Navbar-->
-    <!--<nav class="bg-gray-100 border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+    <!--NAVBAR-->
+    <nav class="bg-gray-100 border-gray-200 dark:bg-gray-900 container relative mx-auto p-6">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto my-6">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="assets/images/logo-bookmark.svg" class="h-8" alt="Bookmark Logo" />
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button type="button"
-                    class="text-white bg-red-700 hover:bg-white hover:text-red-700 hover:border hover:border-red-700 focus:ring-4 focus:outline-none
-                      focus:ring-red-700 font-medium rounded-lg text-sm px-4 py-2 text-center dark:text-white dark:bg-red-600 dark:hover:bg-white 
-                      dark:hover:text-red-700 dark:hover:border dark:hover:border-red-700 dark:focus:ring-red-800">LOGIN</button>
+                <button type="button">
+                    <a href="#" class="px-8 py-2 text-white bg-red-500 border-2 border-red-500 rounded-lg shadow-md hover:text-red-500 hover:bg-white">LOGIN</a>
+                </button>    
                 <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm 
                   text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400
                   dark:hover:bg-white dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
@@ -42,8 +42,8 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 md:ml-auto md:mr-6"
                 id="navbar-cta">
-                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
-                    md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 
+                    md:bg-gray-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a href="#features"
                             class="block py-2 px-3 md:p-0 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 
@@ -60,49 +60,6 @@
                             dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>-->
-
-    <!--NAVBAR-->
-    <nav class="container relative mx-auto p-6">
-        <!-- Flex Container For Nav Items -->
-        <div class="flex items-center justify-between space-x-20 my-6">
-            <!-- Logo -->
-            <div class="z-30">
-                <img src="assets/images/logo-bookmark.svg" alt="" id="logo">
-            </div>
-
-            <!-- Menu Items -->
-            <div class="hidden items-center space-x-10 uppercase text-gray-500 md:flex">
-                <a href="#features" class="tracking-widest hover:text-softRed">Features</a>
-                <a href="#download" class="tracking-widest hover:text-softRed">Download</a>
-                <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
-
-                <a href="#"
-                    class="px-8 py-2 text-white bg-red-500 border-2 border-red-500 rounded-lg shadow-md hover:text-red-500 hover:bg-white">Login</a>
-            </div>
-            <!-- Hamburger Button -->
-            <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="menu"
-            class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue">
-            <div class="w-full py-3 text-center">
-                <a href="#features" class="block hover:text-softRed">Features</a>
-            </div>
-            <div class="w-full py-3 text-center">
-                <a href="#download" class="block hover:text-softRed">Download</a>
-            </div>
-            <div class="w-full py-3 text-center">
-                <a href="#faq" class="block hover:text-softRed">FAQ</a>
-            </div>
-            <div class="w-full py-3 text-center">
-                <a href="#" class="block hover:text-softRed">Login</a>
             </div>
         </div>
     </nav>
@@ -133,13 +90,13 @@
             </div>
 
             <!-- Image -->
-            <div class="relative mx-auto lg:mx-0 lg:w-1/2">
+            <div class="relative  mx-auto lg:mx-0 lg:mb-0 lg:w-1/2 w-full justify-center">
+                <!--<div class="bg-contain bg-no-repeat bg-center h-screen absolute left-[300px] w-[70%] z-10" style="background-image: url('assets/images/imagen-fondo2.jpg');"></div>-->
                 <img src="assets/images/illustration-hero.svg" alt="Hero Illustration"
-                    class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible">
+                    class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible w-[90%] block mx-auto">
             </div>
         </div>
     </section>
-
 
     <!--FEATURES HEADING-->
     <section id="features" class="py-16">
