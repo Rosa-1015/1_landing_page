@@ -1,0 +1,16 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Configuración del editor
+.vscode/
+.idea/
+
+# Archivos temporales de Sass (si usas Live Sass Compiler)
+*.css.map
+*.scssc
+
+# Archivos de caché u ocultos
+*.log
+*.tmp
+*.swp
