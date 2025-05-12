@@ -18,6 +18,7 @@ A responsive and modular landing page. The goal is to demonstrate the same desig
 - CSS3  
 - [Sass](https://sass-lang.com/) (compiled manually or using Live Sass Compiler in your editor)  
 - [Tailwind CSS](https://tailwindcss.com/) via CDN (no build or config required)
+
 ---
 
 ## ✅ Requirements
